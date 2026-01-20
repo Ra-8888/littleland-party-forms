@@ -64,9 +64,10 @@
     
     .header p {
       font-size: 17px;
-      opacity: 0.95;
-      font-weight: 500;
-      letter-spacing: 0.3px;
+      color: rgba(255, 255, 255, 0.95);
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
     }
     
     .cards-grid {
@@ -220,8 +221,10 @@
     .card:last-child {
       position: relative;
       border: 3px solid transparent;
-      background: linear-gradient(white, white) padding-box,
-                  linear-gradient(135deg, var(--color-pink), var(--color-coral), var(--color-beige)) border-box;
+      background: rgba(255, 255, 255, 0.92) padding-box,
+                  linear-gradient(135deg, #FF6B9D, #FF8FA3, #FFB7CC) border-box;
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
     }
     
     .card:last-child::before {
@@ -342,11 +345,13 @@
       </a>
     </div>
     
-    <div style="text-align: center; margin-top: 40px; color: white;">
-      <p style="font-size: 14px; opacity: 0.8;">
-        Για περισσότερες πληροφορίες:<br>
-        📞 Little Land: <a href="tel:+302114447000" style="color: white; font-weight: 600;">211 444 7000</a><br>
-        📞 Montessori: <a href="tel:+302109858300" style="color: white; font-weight: 600;">210 98 58 300</a>
+    <div style="text-align: center; margin-top: 40px; background: rgba(255, 255, 255, 0.15); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); padding: 24px; border-radius: 16px; border: 2px solid rgba(255, 255, 255, 0.3);">
+      <p style="font-size: 15px; color: white; font-weight: 600; margin-bottom: 12px; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);">
+        Για περισσότερες πληροφορίες:
+      </p>
+      <p style="font-size: 16px; margin: 0;">
+        📞 Little Land: <a href="tel:+302114447000" style="color: white; font-weight: 700; text-decoration: none; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); transition: all 0.3s;">211 444 7000</a><br>
+        📞 Montessori: <a href="tel:+302109858300" style="color: white; font-weight: 700; text-decoration: none; text-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); transition: all 0.3s;">210 98 58 300</a>
       </p>
     </div>
   </div>
