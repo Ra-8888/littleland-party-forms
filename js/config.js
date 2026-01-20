@@ -1,0 +1,52 @@
+/* ========================================
+   CONFIGURATION
+   ======================================== */
+
+// N8N Webhook URLs - ΑΛΛΑΞΕ ΤΑ ΜΕ ΤΑ ΔΙΚΑ ΣΟΥ!
+const WEBHOOK_URLS = {
+  littleland: 'YOUR_N8N_WEBHOOK_URL_HERE/littleland-kids',
+  montessori: 'YOUR_N8N_WEBHOOK_URL_HERE/montessori-regular',
+  weekday: 'YOUR_N8N_WEBHOOK_URL_HERE/montessori-weekday'
+};
+
+// Contact Information
+const CONTACT = {
+  littleland: {
+    phone: '211 444 7000',
+    phoneLink: 'tel:+302114447000'
+  },
+  montessori: {
+    phone: '210 98 58 300',
+    phoneLink: 'tel:+302109858300'
+  }
+};
+
+// Form Configuration
+const CONFIG = {
+  // Enable/Disable console logging
+  debug: true,
+  
+  // Validation rules
+  validation: {
+    phone: {
+      pattern: /^69\d{8}$/,
+      message: 'Το τηλέφωνο πρέπει να είναι 10ψήφιο και να ξεκινά με 69'
+    },
+    email: {
+      pattern: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+      message: 'Παρακαλώ εισάγετε έγκυρο email'
+    }
+  },
+  
+  // Success redirect (optional)
+  successRedirect: null, // Set to URL if you want to redirect after success
+  
+  // Error retry attempts
+  maxRetries: 3
+};
+
+// Export for use in other scripts
+if (typeof module !== 'undefined' && module.exports) {
+  module.exports = { WEBHOOK_URLS, CONTACT, CONFIG };
+}
+

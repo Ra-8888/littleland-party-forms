@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little Land - Επιλογή Φόρμας Party</title>
+  <link rel="stylesheet" href="css/base.css">
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #FFB7B2 0%, #B5EAD7 100%);
+    }
+    
+    .form-selector {
+      max-width: 900px;
+      width: 100%;
+      padding: var(--spacing-lg);
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: var(--spacing-2xl);
+      color: white;
+    }
+    
+    .header h1 {
+      font-size: clamp(32px, 6vw, 48px);
+      margin-bottom: var(--spacing-sm);
+      text-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    
+    .header p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+    
+    .cards-grid {
+      display: grid;
+      gap: var(--spacing-lg);
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    
+    .card {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: var(--spacing-xl);
+      text-align: center;
+      box-shadow: var(--shadow-lg);
+      transition: all var(--transition-base);
+      text-decoration: none;
+      color: var(--color-text);
+    }
+    
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.15);
+    }
+    
+    .card-icon {
+      font-size: 64px;
+      margin-bottom: var(--spacing-md);
+    }
+    
+    .card-title {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: var(--spacing-sm);
+      color: var(--color-text);
+    }
+    
+    .card-subtitle {
+      font-size: 14px;
+      color: var(--color-text-light);
+      margin-bottom: var(--spacing-md);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    .card-description {
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--color-text-light);
+      margin-bottom: var(--spacing-lg);
+    }
+    
+    .card-badge {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--color-coral), var(--color-pink));
+      color: white;
+      padding: var(--spacing-xs) var(--spacing-md);
+      border-radius: 20px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: var(--spacing-sm);
+    }
+    
+    .card-badge.special {
+      background: linear-gradient(135deg, #FF8E72, #FFB19D);
+    }
+    
+    .btn-card {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--color-coral), var(--color-pink));
+      color: white;
+      padding: var(--spacing-sm) var(--spacing-lg);
+      border-radius: var(--radius-md);
+      font-weight: 600;
+      text-decoration: none;
+      transition: all var(--transition-base);
+    }
+    
+    .btn-card:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="form-selector">
+    <div class="header">
+      <h1>🎈 Little Land Party Forms 🎈</h1>
+      <p>Επιλέξτε τη φόρμα που σας ενδιαφέρει</p>
+    </div>
+    
+    <div class="cards-grid">
+      <!-- Card 1: Little Land Kids -->
+      <a href="forms/littleland-kids.html" class="card">
+        <div class="card-icon">🎪</div>
+        <h2 class="card-title">Little Land</h2>
+        <p class="card-subtitle">Kids Play Area</p>
+        <p class="card-description">
+          Family Lounge Cafe με χώρο παιχνιδιού για παιδιά. 
+          Διαθέσιμο όλες τις ημέρες.
+        </p>
+        <span class="card-badge">Όλες τις μέρες</span>
+        <div style="margin-top: 20px;">
+          <span class="btn-card">Ανοίξτε Φόρμα →</span>
+        </div>
+      </a>
+      
+      <!-- Card 2: Montessori Regular -->
+      <a href="forms/montessori-regular.html" class="card">
+        <div class="card-icon">🌈</div>
+        <h2 class="card-title">Montessori</h2>
+        <p class="card-subtitle">Little Land Regular</p>
+        <p class="card-description">
+          Χώρος με δημιουργικές δραστηριότητες Montessori. 
+          Κανονική τιμολόγηση.
+        </p>
+        <span class="card-badge">Κανονική Προσφορά</span>
+        <div style="margin-top: 20px;">
+          <span class="btn-card">Ανοίξτε Φόρμα →</span>
+        </div>
+      </a>
+      
+      <!-- Card 3: Montessori Weekday -->
+      <a href="forms/montessori-weekday.html" class="card">
+        <div class="card-icon">⭐</div>
+        <h2 class="card-title">Montessori</h2>
+        <p class="card-subtitle">Weekday Special Offer</p>
+        <p class="card-description">
+          Ειδική προσφορά για καθημερινές! 
+          Ισχύει μόνο Τρίτη, Τετάρτη και Πέμπτη.
+        </p>
+        <span class="card-badge special">🔥 Τρ / Τε / Πε</span>
+        <div style="margin-top: 20px;">
+          <span class="btn-card">Ανοίξτε Φόρμα →</span>
+        </div>
+      </a>
+    </div>
+    
+    <div style="text-align: center; margin-top: 40px; color: white;">
+      <p style="font-size: 14px; opacity: 0.8;">
+        Για περισσότερες πληροφορίες:<br>
+        📞 Little Land: <a href="tel:+302114447000" style="color: white; font-weight: 600;">211 444 7000</a><br>
+        📞 Montessori: <a href="tel:+302109858300" style="color: white; font-weight: 600;">210 98 58 300</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>
+

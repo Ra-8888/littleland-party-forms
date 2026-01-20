@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Montessori Little Land - Προσφορά Party</title>
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/forms.css">
+</head>
+<body>
+  <!-- Loading Overlay -->
+  <div class="loading-overlay">
+    <div class="spinner"></div>
+  </div>
+
+  <div class="container">
+    <!-- Header -->
+    <header class="form-header">
+      <!-- Decorative Balloons -->
+      <div class="decoration balloon balloon-mint" style="top: 25px; left: 8%;"></div>
+      <div class="decoration balloon balloon-pink" style="top: 45px; right: 10%;"></div>
+      <div class="decoration balloon balloon-yellow" style="top: 65px; left: 12%;"></div>
+      <div class="decoration balloon balloon-blue" style="top: 35px; right: 15%;"></div>
+      
+      <div class="logo-container">
+        <h1 class="logo">
+          🌈 <span style="color: #F7DC6F; font-family: 'Fredoka', sans-serif;">Little</span> <span style="color: #FF9AA2;">♥ Land</span> 🌈
+        </h1>
+        <p class="form-subtitle" style="color: #98D8C8; font-weight: 700; font-size: 16px;">Montessori</p>
+        <p class="form-subtitle" style="color: #FF8FA3;">Family Lounge Cafe • Creative Activities</p>
+      </div>
+      <h2 class="form-title">ΕΝΗΜΕΡΩΤΙΚΟ ΕΝΤΥΠΟ<br>ΠΡΟΣΦΟΡΑΣ PARTY</h2>
+    </header>
+
+    <!-- Main Form -->
+    <form id="partyForm" class="form-card">
+      <!-- Section 1: Στοιχεία Party -->
+      <div class="form-section">
+        <h3 class="section-title">
+          <span class="section-icon">🎉</span>
+          Στοιχεία Party
+        </h3>
+        
+        <div class="form-grid form-grid-2">
+          <div class="form-group">
+            <label class="form-label required" for="party_date">ΗΜ/ΝΙΑ PARTY</label>
+            <input type="date" id="party_date" name="party_date" class="form-input" required>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label" for="party_day">ΗΜΕΡΑ</label>
+            <input type="text" id="party_day" name="party_day" class="form-input" readonly placeholder="Αυτόματα">
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 2: Στοιχεία Γονέα -->
+      <div class="form-section">
+        <h3 class="section-title">
+          <span class="section-icon">👤</span>
+          Στοιχεία Γονέα
+        </h3>
+        
+        <div class="form-group">
+          <label class="form-label required" for="parent_name">ΟΝ/ΝΥΜΟ ΓΟΝΕΑ</label>
+          <input type="text" id="parent_name" name="parent_name" class="form-input" required placeholder="π.χ. Γιάννης Παπαδόπουλος">
+        </div>
+        
+        <div class="form-group">
+          <label class="form-label required" for="email">EMAIL</label>
+          <input type="email" id="email" name="email" class="form-input" required placeholder="email@example.com">
+        </div>
+        
+        <div class="form-grid form-grid-2">
+          <div class="form-group">
+            <label class="form-label required" for="phone">ΤΗΛ.</label>
+            <input type="tel" id="phone" name="phone" class="form-input" required placeholder="69XXXXXXXX" maxlength="10">
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label" for="area">ΠΕΡΙΟΧΗ</label>
+            <input type="text" id="area" name="area" class="form-input" placeholder="π.χ. Χαλάνδρι">
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 3: Στοιχεία Παιδιού -->
+      <div class="form-section">
+        <h3 class="section-title">
+          <span class="section-icon">🎂</span>
+          Στοιχεία Παιδιού
+        </h3>
+        
+        <div class="form-grid form-grid-2">
+          <div class="form-group">
+            <label class="form-label required" for="child_name">ΟΝΟΜΑ ΠΑΙΔΙΟΥ</label>
+            <input type="text" id="child_name" name="child_name" class="form-input" required placeholder="π.χ. Μαρία">
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label required" for="child_age">ΗΛΙΚΙΑ</label>
+            <select id="child_age" name="child_age" class="form-select" required>
+              <option value="">Επιλέξτε...</option>
+              <option value="1">1 έτος</option>
+              <option value="2">2 έτη</option>
+              <option value="3">3 έτη</option>
+              <option value="4">4 έτη</option>
+              <option value="5">5 έτη</option>
+              <option value="6">6 έτη</option>
+              <option value="7">7 έτη</option>
+              <option value="8">8 έτη</option>
+              <option value="9">9 έτη</option>
+              <option value="10">10 έτη</option>
+              <option value="11">11 έτη</option>
+              <option value="12">12 έτη</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 4: Ώρες & Άτομα -->
+      <div class="form-section">
+        <h3 class="section-title">
+          <span class="section-icon">⏰</span>
+          Ώρες & Αριθμός Ατόμων
+        </h3>
+        
+        <div class="form-grid form-grid-2">
+          <div class="form-group">
+            <label class="form-label required" for="time_from">ΩΡΕΣ ΑΠΟ</label>
+            <input type="time" id="time_from" name="time_from" class="form-input" required>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label required" for="time_to">ΕΩΣ</label>
+            <input type="time" id="time_to" name="time_to" class="form-input" required>
+          </div>
+        </div>
+        
+        <div class="form-grid form-grid-2">
+          <div class="form-group">
+            <label class="form-label required" for="num_children">ΑΡ. ΠΑΙΔΙΩΝ</label>
+            <input type="number" id="num_children" name="num_children" class="form-input" min="1" max="100" required placeholder="π.χ. 20">
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label" for="num_adults">ΑΡ. ΣΥΝΟΔΩΝ</label>
+            <input type="number" id="num_adults" name="num_adults" class="form-input" min="0" max="100" placeholder="π.χ. 10">
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 5: Θέση Party -->
+      <div class="form-section">
+        <h3 class="section-title">
+          <span class="section-icon">📍</span>
+          Θέση Party
+        </h3>
+        
+        <div class="radio-group">
+          <label class="radio-item">
+            <input type="radio" name="party_location" value="εσωτερικό_χώρο" class="radio-input" required>
+            <span class="radio-label">ΕΣΩΤΕΡΙΚΟ ΧΩΡΟ</span>
+          </label>
+          <label class="radio-item">
+            <input type="radio" name="party_location" value="εξωτερικό_χώρο" class="radio-input">
+            <span class="radio-label">ΕΞΩΤΕΡΙΚΟ ΧΩΡΟ</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Section 6: Έξτρα Παροχές -->
+      <div class="form-section">
+        <h3 class="section-title">
+          <span class="section-icon">✨</span>
+          Έξτρα Παροχές
+        </h3>
+        
+        <div class="extras-grid">
+          <label class="extra-item">
+            <input type="checkbox" name="extras" value="clown">
+            <div class="extra-info">
+              <span class="extra-name">CLOWN</span>
+              <span class="extra-price">120€ / 1ώρα</span>
+            </div>
+          </label>
+          
+          <label class="extra-item">
+            <input type="checkbox" name="extras" value="animatore">
+            <div class="extra-info">
+              <span class="extra-name">ANIMATORE</span>
+              <span class="extra-price">120€ / 1.5ώρα</span>
+            </div>
+          </label>
+          
+          <label class="extra-item">
+            <input type="checkbox" name="extras" value="magos">
+            <div class="extra-info">
+              <span class="extra-name">ΜΑΓΟΣ</span>
+              <span class="extra-price">120€ / 1ώρα</span>
+            </div>
+          </label>
+          
+          <label class="extra-item">
+            <input type="checkbox" name="extras" value="prive_party">
+            <div class="extra-info">
+              <span class="extra-name">PRIVE PARTY</span>
+              <span class="extra-price">Αποκλειστικότητα όλου του παιδότοπου - 400€</span>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <!-- Section 7: Μενού Παιδιών -->
+      <div class="menu-section">
+        <h3 class="section-title">
+          <span class="section-icon">🍕</span>
+          Μενού Παιδιών
+        </h3>
+        
+        <div class="menu-grid">
+          <!-- Menu 1 -->
+          <div class="menu-card" data-menu="children_1">
+            <div class="menu-ribbon color-mint">
+              <span class="menu-number">1</span>
+              <span class="menu-price">11 ΕΥΡΩ / ΑΤΟΜΟ</span>
+            </div>
+            <div class="menu-content">
+              <ul class="menu-items">
+                <li>Τυροπιτάκι κουρού</li>
+                <li>Πιροσκί λουκάνικο</li>
+                <li>Πίτσακι</li>
+                <li>Πατατοφατσούλα</li>
+                <li>Χυμός απεριόριστος</li>
+              </ul>
+              <div class="form-group mt-3">
+                <label class="form-label">Άτομα</label>
+                <input type="number" name="menu_children_1_count" class="form-input" min="0" value="0">
+              </div>
+            </div>
+            <input type="radio" name="menu_children" value="1" class="menu-radio">
+          </div>
+
+          <!-- Menu 2 -->
+          <div class="menu-card" data-menu="children_2">
+            <div class="menu-ribbon color-pink">
+              <span class="menu-number">2</span>
+              <span class="menu-price">13 ΕΥΡΩ / ΑΤΟΜΟ</span>
+            </div>
+            <div class="menu-content">
+              <ul class="menu-items">
+                <li>4 Κοτομπουκιές ή 4 Κεφτεδάκια</li>
+                <li>Πατάτες</li>
+                <li>Ντοματίνια</li>
+                <li>Αγγουράκι</li>
+                <li>Χυμός απεριόριστος</li>
+              </ul>
+              <div class="form-group mt-3">
+                <label class="form-label">Άτομα</label>
+                <input type="number" name="menu_children_2_count" class="form-input" min="0" value="0">
+              </div>
+            </div>
+            <input type="radio" name="menu_children" value="2" class="menu-radio">
+          </div>
+
+          <!-- Menu 3 -->
+          <div class="menu-card" data-menu="children_3">
+            <div class="menu-ribbon color-beige">
+              <span class="menu-number">3</span>
+              <span class="menu-price">16 ΕΥΡΩ / ΑΤΟΜΟ</span>
+            </div>
+            <div class="menu-content">
+              <ul class="menu-items">
+                <li>Πατατοφατσούλες</li>
+                <li>Ντοματίνια</li>
+                <li>2 Καλαμάκια χοιρινό ή Κοτόπουλο</li>
+                <li>1 Πίτα ψημένη</li>
+                <li>Χυμός απεριόριστος</li>
+              </ul>
+              <div class="form-group mt-3">
+                <label class="form-label">Άτομα</label>
+                <input type="number" name="menu_children_3_count" class="form-input" min="0" value="0">
+              </div>
+            </div>
+            <input type="radio" name="menu_children" value="3" class="menu-radio">
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 8: Μενού Συνοδών -->
+      <div class="menu-section">
+        <h3 class="section-title">
+          <span class="section-icon">☕</span>
+          Μενού Συνοδών
+        </h3>
+        
+        <div class="menu-grid">
+          <!-- Menu 1 -->
+          <div class="menu-card" data-menu="adults_1">
+            <div class="menu-ribbon color-sage">
+              <span class="menu-number">1</span>
+              <span class="menu-price">7 ΕΥΡΩ / ΑΤΟΜΟ</span>
+            </div>
+            <div class="menu-content">
+              <ul class="menu-items">
+                <li>Καφές ή Αναψυκτικό κεικ</li>
+              </ul>
+              <div class="form-group mt-3">
+                <label class="form-label">Άτομα</label>
+                <input type="number" name="menu_adults_1_count" class="form-input" min="0" value="0">
+              </div>
+            </div>
+            <input type="radio" name="menu_adults" value="1" class="menu-radio">
+          </div>
+
+          <!-- Menu 2 -->
+          <div class="menu-card" data-menu="adults_2">
+            <div class="menu-ribbon color-orange">
+              <span class="menu-number">2</span>
+              <span class="menu-price">13 ΕΥΡΩ / ΑΤΟΜΟ</span>
+            </div>
+            <div class="menu-content">
+              <ul class="menu-items">
+                <li>Καφές ή Αναψυκτικό μαζί με κεικ</li>
+                <li>Πίτσα 10 τεμαχίων (Επιλογή από 6 γεύσεις)</li>
+                <li>Σε αναλογία ανά 3 άτομα</li>
+                <li><strong>Αναψυκτικό:</strong> Coca Cola / Sprite / Ice Tea / Πορτοκαλάδα / Λεμονίτα</li>
+              </ul>
+              <div class="form-group mt-3">
+                <label class="form-label">Άτομα</label>
+                <input type="number" name="menu_adults_2_count" class="form-input" min="0" value="0">
+              </div>
+            </div>
+            <input type="radio" name="menu_adults" value="2" class="menu-radio">
+          </div>
+
+          <!-- Menu 3 -->
+          <div class="menu-card" data-menu="adults_3">
+            <div class="menu-ribbon color-beige">
+              <span class="menu-number">3</span>
+              <span class="menu-price">16 ΕΥΡΩ / ΑΤΟΜΟ</span>
+            </div>
+            <div class="menu-content">
+              <ul class="menu-items">
+                <li>Καφές ή Αναψυκτικό μαζί με κεικ</li>
+                <li>Πατάτες τηγανιτές</li>
+                <li>9 Καλαμάκια χοιρινό σε αναλογία ανά 3 άτομα</li>
+                <li>4 Πίτες ψημένες</li>
+                <li><strong>Αναψυκτικό:</strong> Coca Cola / Sprite / Ice Tea / Πορτοκαλάδα / Λεμονίτα</li>
+              </ul>
+              <div class="form-group mt-3">
+                <label class="form-label">Άτομα</label>
+                <input type="number" name="menu_adults_3_count" class="form-input" min="0" value="0">
+              </div>
+            </div>
+            <input type="radio" name="menu_adults" value="3" class="menu-radio">
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 9: Προκαταβολή & Υπογραφή -->
+      <div class="form-section">
+        <div class="form-grid form-grid-2">
+          <div class="form-group">
+            <label class="form-label" for="deposit">ΠΡΟΚΑΤΑΒΟΛΗ (€)</label>
+            <input type="number" id="deposit" name="deposit" class="form-input" min="0" step="10" placeholder="π.χ. 150">
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label required" for="signature">ΥΠΟΓΡΑΦΗ / ΟΝΟΜΑ</label>
+            <input type="text" id="signature" name="signature" class="form-input" required placeholder="Ονοματεπώνυμο">
+          </div>
+        </div>
+      </div>
+
+      <!-- Section 10: Παρατηρήσεις -->
+      <div class="form-section">
+        <div class="form-group">
+          <label class="form-label" for="notes">ΠΑΡΑΤΗΡΗΣΕΙΣ</label>
+          <textarea id="notes" name="notes" class="form-textarea" rows="4" placeholder="Οποιαδήποτε επιπλέον πληροφορία ή αίτημα..."></textarea>
+        </div>
+      </div>
+
+      <!-- Time Slots Info -->
+      <div class="time-slots">
+        <h4 class="time-slots-title">Ωράρια Παιδικών Party</h4>
+        <div class="time-slot">ΠΡΩΪΝΗ ΖΩΝΗ: 10:30 - 13:30</div>
+        <div class="time-slot">ΜΕΣΗΜΕΡΙΑΝΗ ΖΩΝΗ: 14:30 - 17:30</div>
+        <div class="time-slot">ΑΠΟΓΕΥΜΑΤΙΝΗ ΖΩΝΗ: 18:30 - 21:30</div>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit" class="btn btn-primary btn-block">
+        Αποστολή Αίτησης
+      </button>
+    </form>
+
+    <!-- Footer -->
+    <footer class="form-footer">
+      <div class="contact-info">
+        <p style="margin-bottom: 8px; color: #6B6B6B;">Τηλέφωνο επικοινωνίας ατόμων:</p>
+        <a href="tel:+302109858300" class="phone-number">210 98 58 300</a>
+      </div>
+      
+      <div class="disclaimer">
+        <p style="font-size: 13px; line-height: 1.8;">
+          • ΔΕΝ ΕΠΙΤΡΕΠΟΝΤΑΙ ΤΑ ΚΟΝΦΕΤΙ ΕΝΤΟΣ ΠΙΝΙΑΤΑΣ ΚΑΙ ΜΠΑΛΟΝΙΩΝ<br>
+          • ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ Η ΤΟΙΧΟΚΟΛΛΗΣΗ ΔΙΑΚΟΣΜΗΤΙΚΩΝ ΣΤΟΙΧΕΙΩΝ<br>
+          • ΔΕΝ ΕΠΙΤΡΕΠΟΝΤΑΙ ΤΡΟΦΙΜΑ ΠΟΥ ΠΑΡΕΧΟΝΤΑΙ ΑΠΟ ΤΟΥΣ ΓΟΝΕΙΣ<br>
+          • ΔΕΝ ΕΠΙΤΡΕΠΕΤΑΙ Η ΣΥΜΜΕΤΟΧΗ ΕΞΩΤΕΡΙΚΩΝ INTERΤΑΙΜΕΝΤ (όπως μάγος, κλόουν, animator)
+        </p>
+        <p style="margin-top: 16px; font-size: 12px; color: var(--color-error);">
+          <strong>Στις αναγραφόμενες τιμές δεν συμπεριλαμβάνεται ο Φ.Π.Α.</strong>
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script src="../js/config.js"></script>
+  <script src="../js/form-handler.js"></script>
+  <script src="../js/montessori-regular.js"></script>
+</body>
+</html>
+
