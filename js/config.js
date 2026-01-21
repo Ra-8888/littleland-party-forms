@@ -2,11 +2,11 @@
    CONFIGURATION
    ======================================== */
 
-// N8N Webhook URLs - ΑΛΛΑΞΕ ΤΑ ΜΕ ΤΑ ΔΙΚΑ ΣΟΥ!
+// N8N Webhook URLs
 const WEBHOOK_URLS = {
-  littleland: 'YOUR_N8N_WEBHOOK_URL_HERE/littleland-kids',
-  montessori: 'YOUR_N8N_WEBHOOK_URL_HERE/montessori-regular',
-  weekday: 'YOUR_N8N_WEBHOOK_URL_HERE/montessori-weekday'
+  littleland: 'https://n8n.srv1172726.hstgr.cloud/webhook/littleland-kids',
+  montessori: 'https://n8n.srv1172726.hstgr.cloud/webhook/montessori-regular',
+  weekday: 'https://n8n.srv1172726.hstgr.cloud/webhook/montessori-weekday'
 };
 
 // Contact Information
